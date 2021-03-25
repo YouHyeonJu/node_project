@@ -1,0 +1,74 @@
+<!DOCTYPE ejs>
+<ejs lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/studenthomestyle.css">
+    <title>Permit ME_studnet</title>
+    <script src="https://kit.fontawesome.com/3704bd827e.js"
+     crossorigin="anonymous">
+    </script>
+    <script src="/routes/main.js" defer></script>
+</head>
+<body>
+    <form method="post">
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/studenthome">Permit Me</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="/studenthome">홈</a></li>
+            <li><a href="/studentout">외출신청</a></li>
+            <li><a href="/studentin">외출내역</a></li>
+            <li><a href="/studentwarning">경고확인</a></li>
+        </ul>
+
+        <ul class="info">
+            <span id="number" style="display: inline-block;">학생2309</span>님 반갑습니다
+            <form action="http://localhost:3000/studenthome/logout" method="POST">
+                <button type="submit" name="sb" value="g" >로그아웃</button>
+            </form>
+            
+            <a href="/studentwarning">
+            <div><i class="fas fa-exclamation-triangle"></i>경고 3</div>
+            </a>
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <div class="pageWrap" style="width: 100%; min-height: 500px;">
+        <div class="pageLeft" style="width: 50%; float: left;">
+        <table style="float: left; width: 100%;"> 
+            <th>외출자</th>
+            <tr>
+                <td>2309</td>
+            </tr>
+            <tr>
+                <td>2314</td>
+            </tr>
+            <tr>
+                <td>2418</td>
+            </tr>
+        </table>
+        <button style="float: left; "><a href="/studentout" class="btns">외출신청하러가기</a></button>
+        </div>
+    
+
+         <div class="pageRight" style="width: 50%; min-height: 500px; float: left;">
+         <table style="float: right; width: 100%; margin: 0 auto;">
+            <th>복귀자</th>
+            <tr>
+                <td>2311</td>
+            </tr>
+        </table>
+        <button style="float: right;"><a href="/studentin" class="btns">복귀신청하러가기</a></button>
+        </div>
+    </div>
+    
+
+    </ul>
+    </form>
+</body>
+</ejs>

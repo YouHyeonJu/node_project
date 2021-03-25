@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/signupstyle.css">
+    <title>Permit Me_signup</title>
+    <% if(IDerror==3){ %>
+        <script>alert('입력이 부족합니다.');</script>
+    <% }else if(IDerror==2){ %>
+        <script>alert('비밀번호가 올바르지 않습니다.');</script>
+     <% }else if(IDerror==1){ %>
+        <script>alert('아이디가 중복된 iD입니다.');</script>
+    <% } %>
+</head>
+<body>
+        <section class="signup-form">
+        <h1>Permit Me</h1>
+        <form action="http://localhost:3000/signup" method="post">
+            <div class="int-area">
+                <label>아이디<small>(이메일)</small><input type="email" name="new_idem" id="idem"
+                    placeholder="@gsm.hs.kr"required>
+                </label>
+            <div class="int-area">
+                <label>비밀번호<br><input type="password" name="new_pw" id="new_pw"
+                    required></label>
+            </div>
+            <div class="int-area">
+                <label>비밀번호 재입력<br><input type="password" name="new_ppw" id="new_ppw"
+                    required></label>
+            </div>
+            <div class="int-area">
+                <label>이름<br><input type="text" name="name" id="name"
+                    required></label>
+            </div>
+            <div class="int-area">
+                <label>학년반번호<br><input type="text" name="numclass" id="numclass"
+                    placeholder="ex)2309" required></label>
+            </div>
+            <a href="/login"><button class="sign" type="submit">가입하기</button></a>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Permit Me</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <% if (IDerror){ %>
+        <script>alert('아이디나 비밀번호를 잘못입력하였습니다.');</script>
+    <% } %>
+</head>
+<body>
+    <section class="login-form">
+        <h1>Permit Me</h1>
+        <form action="http://localhost:3000/" method="post">
+            <div class="int-area">
+                <input type="text" name="id" id="id"
+                autocomplete="off" required>
+                <label for="id">ID</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw"
+                autocomplete="off" required>
+                <label for="pw">PW</label>
+            </div>
+            <label class="remember"><input type="checkbox" name="re" value="cookieName">Remember Me</label>
+            <div class="btn-area">
+                <button type="submit">LOGIN</button>
+            </div>
+        
+        <div class="caption">
+            <a href="/forgot">Forgot ID or PW?</a>
+        </div>
+        <div class="signup">
+            <a href="/signup">Sing Up</a>
+        </div>
+        </form>
+    </section>
+</body>
+</html>

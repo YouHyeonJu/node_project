@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/teacherhomestyle.css">
+    <title>Permit ME_teacher</title>
+    <script src="https://kit.fontawesome.com/3704bd827e.js"
+     crossorigin="anonymous">
+    </script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/teacherhome">Permit Me</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="/teacherhome">홈</a></li>
+            <li><a href="/teachercheck">외출신청확인</a></li>
+            <li><a href="/teacherout">외출명단</a></li>
+            <li><a href="/teacherwarning">경고명단</a></li>
+        </ul>
+
+        <ul class="info">
+            <span id="number" style="display: inline-block;">교사 나백환</span>님 반갑습니다
+            <button><a href="/">로그아웃</a></button>
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+
+    <table class="checktable">
+        <div class="check">외출신청내역</div>
+            <td>학번</td>
+            <td>날짜</td>
+            <td>시간</td>
+            <td>사유</td>
+            <td>상태</td>
+        </tr>
+        <tr>
+            <td>2309</td>
+            <td>10/10</td>
+            <td>1시간</td>
+            <td>병원</td>
+            <td><a href=""><button class="ckbtn">확인</button></a></td>
+        </tr>
+        <tr>
+            <td>2304</td>
+            <td>10/10</td>
+            <td>2시간이상</td>
+            <td>자격증</td>
+            <td><a href=""><button class="ckbtn">확인</button></a></td>
+        </tr>
+        <tr>
+            <td>2315</td>
+            <td>10/10</td>
+            <td>2시간</td>
+            <td>집</td>
+            <td><a href=""><button class="ckbtn">확인</button></a></td>
+        </tr>
+    </table>
+</body>
+</html>

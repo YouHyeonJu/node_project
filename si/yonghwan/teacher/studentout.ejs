@@ -1,0 +1,64 @@
+<!DOCTYPE ejs>
+<ejs lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/studenthomestyle.css">
+    <title>Permit ME_studnet</title>
+    <script src="https://kit.fontawesome.com/3704bd827e.js"
+     crossorigin="anonymous">
+    </script>
+    <script href="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/studenthome">Permit Me</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="/studenthome">홈</a></li>
+            <li><a href="/studentout">외출신청</a></li>
+            <li><a href="/studentin">복귀신청</a></li>
+            <li><a href="/studentwarning">경고확인</a></li>
+        </ul>
+
+        <ul class="info">
+            <span id="number" style="display: inline-block;">학생2309</span>님 반갑습니다
+            <button><a href="#">로그아웃</a></button>
+            <a href="/studentwarning">
+            <div><i class="fas fa-exclamation-triangle"></i>경고 3</div>
+            </a>
+        </ul>
+
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+
+    <ul class="applicant_30min">
+        <li>30분 외출</li>
+        <div><label class="type"><input type="checkbox">병원</label></div>
+        <div><label class="type"><input type="checkbox">은행</label></div>
+        <div><label class="type"><input type="checkbox">자격증</label></div>
+        <div><label class="type"><input type="checkbox">기타</label></div>
+        <button><a href="/studentin">신청</a></button>
+    </ul>
+    <ul class="applicant_1hour">
+        <li>1시간 외출</li>
+        <div><label class="type"><input type="checkbox">병원</label></div>
+        <div><label class="type"><input type="checkbox">은행</label></div>
+        <div><label class="type"><input type="checkbox">자격증</label></div>
+        <div><label class="type"><input type="checkbox">기타</label></div>
+        <button><a href="/studentin">신청</a></button>
+    </ul>
+    <ul class="applicant_2hour">
+        <li>2시간 외출</li>
+        <div><label class="type"><input type="checkbox">병원</label></div>
+        <div><label class="type"><input type="checkbox">은행</label></div>
+        <div><label class="type"><input type="checkbox">자격증</label></div>
+        <div><label class="type"><input type="checkbox">기타</label></div>
+        <button><a href="/studentin">신청</a></button>
+    </ul>
+</body>
+</ejs>

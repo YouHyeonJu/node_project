@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("/images/mainbg.jpg") no-repeat center;
+    background-size: cover;
+    font-family: 'Jua', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7d358;
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 40px;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    padding-left: 30px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 28px;
+    padding-right: 0px;
+}
+
+.navbar_menu li:hover {
+    background-color: #f5da81;
+    border-radius: 4px;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_toogleBtn {
+    display: none;
+}
+
+
+.info {
+    font-size: 22px;
+}
+
+.info button {
+    width:80px;
+    height: 30px;
+    background-color: #F3E2A9;
+    color: white;
+}
+.info a{
+    color: black;
+}
+
+.pageWrap button {
+    width:100%;
+    height: 70px;
+    background-color: #f7be81;
+    color: white;
+    float: left;
+    font-size: 35px;
+    font-family: 'Jua', sans-serif;
+}
+
+.pageWrap table th {
+    font-size: 35px;
+    font-family: 'Jua', sans-serif;
+}
+
+.pageWrap table td {
+    padding: 30px 20 0px;
+    border: 1px solid #999;
+    display: block;
+    width: 100%;
+}
+
+.pageWrap table td {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+
+    }
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .navbar_toogleBtn
+    {
+        display: block;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_menu.active {
+        display: flex;
+    }
+}
+
+
+.out,
+.in {
+    margin-left: 45%;
+    margin-top: 50px;
+    font-size: 38px;
+}
+
+.outcktable,
+.incktable {
+    width: 90%;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 26px;
+}
+
+.outcktable td
+.incktable td{
+    height: 50px;
+    width: 180px;
+}
+
+.outbtn,
+.inbtn {
+    width:100px;
+    height: 40px;
+    background-color: #f7be81;
+    border-radius: 10px;
+    font-size: 26px;
+    font-family: 'Jua', sans-serif;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/forgotstyle.css">
+    <title>Permit Me_forgot</title>
+    <% if (IDerror==3){ %>
+        <script>alert('입력이 부족합니다.');</script>
+    <% }else if(IDerror==2){ %>
+        <script>alert('아이디가 존재하지 않습니다.');</script>
+     <% }else if(IDerror==1){ %>
+        <script>alert('비밀번호가 같지 않습니다.');</script>
+        <% } %>
+</head>
+<body>
+    <section class="forgot-form">
+        <h1>Permit Me</h1>
+        <form action="http://localhost:3000/forgot" method="post">
+            <div class="int-area">
+                <label>새비밀번호<br><input type="password" name="re_pw" id="re_pw"
+                    required></label>
+            </div>
+            <div class="int-area">
+                <label>새비밀번호 재입력<br><input type="password" name="re_ppw" id="re_ppw"
+                    required></label>
+            </div>
+            <button class="change" type="submit" name="sb">비밀번호변경하기</button>
+        </form>
+    </section>
+    
+</body>
+</html>

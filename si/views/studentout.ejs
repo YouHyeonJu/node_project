@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/studenthomestyle.css">
+    <title>Permit ME_studnet</title>
+    <script src="https://kit.fontawesome.com/3704bd827e.js"
+     crossorigin="anonymous">
+    </script>
+    <script src="/routes/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/studenthome">Permit Me</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="/studenthome">홈</a></li>
+            <li><a href="/studentout">외출신청</a></li>
+            <li><a href="/studentin">외출내역</a></li>
+            <li><a href="/studentwarning">경고확인</a></li>
+        </ul>
+
+        <ul class="info">
+            <span id="number" style="display: inline-block;">학생2309</span>님 반갑습니다
+            <form action="http://localhost:3000/studenthome/logout" method="POST">
+                <button type="submit" name="sb" value="g" >로그아웃</button>
+            </form>
+            <a href="/studentwarning">
+            <div><i class="fas fa-exclamation-triangle"></i>경고 3</div>
+            </a>
+        </ul>
+
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+
+    <ul class="applicant_1hour">
+        <li>1시간 외출</li>
+        <form action="http://localhost:3000/studentout/1hour" method="POST">
+        <div><label class="type"><input type="radio" name="input1" value="병원">병원</label></div>
+        <div><label class="type"><input type="radio" name="input1"value="은행">은행</label></div>
+            <button type="submit" name="vbt1" value="vbt1">신청</button>
+        </form>
+        
+    </ul>
+    <ul class="applicant_2hour">
+        <li>2시간 외출</li>
+        <form action="http://localhost:3000/studentout/2hour" method="POST">
+        <div><label class="type"><input type="radio" name="input2" value="병원">병원</label></div>
+        <div><label class="type"><input type="radio" name="input2" value="은행">은행</label></div>
+        <div><label class="type"><input type="radio" name="input2" value="자격증">자격증</label></div>
+        <button type="submit" name="vbt2" value="vbt2">신청</button>
+        </form>
+        
+    </ul>
+    <ul class="applicant_more">
+        <li>기타 외출</li>
+        <form action="http://localhost:3000/studentout/giter" method="POST">
+        <div><label class="type"><input type="radio" name="input3" value="1">1시간</label></div>
+        <div><label class="type"><input type="radio" name="input3"value="2">2시간</label></div>
+        <div><label class="type"><input type="radio" name="input3" value="3">3시간</label></div>
+        <label>사유<input class="text" type="text" id="more" name="more"></label>
+        <button type="submit" name="vbt3" value="vbt3">신청</button>
+    </form>
+    </ul>
+</body>
+</html>

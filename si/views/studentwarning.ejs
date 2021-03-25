@@ -1,0 +1,67 @@
+<!DOCTYPE ejs>
+<ejs lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/studenthomestyle.css">
+    <title>Permit ME_studnet</title>
+    <script src="https://kit.fontawesome.com/3704bd827e.js"
+     crossorigin="anonymous">
+    </script>
+    <script src="/routes/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/studenthome">Permit Me</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="/studenthome">홈</a></li>
+            <li><a href="/studentout">외출신청</a></li>
+            <li><a href="/studentin">외출내역</a></li>
+            <li><a href="/studentwarning">경고확인</a></li>
+        </ul>
+
+        <ul class="info">
+            <span id="number" style="display: inline-block;">학생2309</span>님 반갑습니다
+            <form action="http://localhost:3000/studenthome/logout" method="POST">
+                <button type="submit" name="sb" value="g" >로그아웃</button>
+            </form>
+            <a href="/studentwarning">
+            <div><i class="fas fa-exclamation-triangle"></i>경고 3</div>
+            </a>
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    
+    <div class="wartotal">
+
+    <table class="wartable">
+        <div class="war"><i class="fas fa-exclamation-triangle"></i>경고내역</div>
+        </div>
+            <td>학번</td>
+            <td>날짜</td>
+            <td>경고사유</td>
+        </tr>
+        <tr>
+            <td>2309</td>
+            <td>12/07</td>
+            <td>무단외출</td>
+        </tr>
+        <tr>
+            <td>2309</td>
+            <td>11/01</td>
+            <td>시간오버</td>
+        </tr>
+        <tr>
+            <td>2309</td>
+            <td>11/24</td>
+            <td>무단외출</td>
+        </tr>
+    </table>
+
+</body>
+</ejs>

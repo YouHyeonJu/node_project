@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/teacherhomestyle.css">
+    <title>Permit ME_teacher</title>
+    <script src="https://kit.fontawesome.com/3704bd827e.js"
+     crossorigin="anonymous">
+    </script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="/teacherhome">Permit Me</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="/teacherhome">홈</a></li>
+            <li><a href="/teachercheck">외출신청확인</a></li>
+            <li><a href="/teacherout">외출명단</a></li>
+            <li><a href="/teacherwarning">경고명단</a></li>
+        </ul>
+
+        <ul class="info">
+            <span id="number" style="display: inline-block;">교사 나백환</span>님 반갑습니다
+            <form action="/studenthome/logout" method="POST">
+                <button><a href="/">로그아웃</a></button>
+            </form>
+            
+        </ul>
+        <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <div class="pageWrap" style="width: 100%; min-height: 500px;">
+        <div class="pageLeft" style="width: 50%; float: left;">
+        <table style="float: left; width: 100%;"> 
+            <th>외출자</th>
+            <tr>
+                <td>2309</td>
+            </tr>
+            <tr>
+                <td>2314</td>
+            </tr>
+            <tr>
+                <td>2418</td>
+            </tr>
+        </table>
+        <a href="/teachercheck" class="btns"><button style="float: left; ">외출신청확인하러가기</button></a>
+        </div>
+    
+
+         <div class="pageRight" style="width: 50%; min-height: 500px; float: left;">
+         <table style="float: right; width: 100%; margin: 0 auto;">
+            <th>복귀자</th>
+            <tr>
+                <td>2311</td>
+            </tr>
+        </table>
+        <a href="/teacherout" class="btns"><button style="float: right;">외출명단보러가기</button></a>
+        </div>
+    </div>
+    
+
+    </ul>
+</body>
+</html>
